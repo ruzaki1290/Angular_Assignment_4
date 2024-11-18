@@ -1,12 +1,12 @@
 <p class="status-message">Your-up-to date tasks manager 📝✨</p>
 <div class="todos">
-  <form>
+  <form (submit)="addTodo()">
     <input
         type="text"
         name="inputTodo"
         placeholder="Enter your todo here"
         class="todo-input"
-        [ngModel]="inputTodo"
+        [(ngModel)]="inputTodo"
     />
     <input type="submit" value="Add Todo" class="todo-submit">
   </form>

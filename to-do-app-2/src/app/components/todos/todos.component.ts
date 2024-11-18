@@ -56,4 +56,12 @@ export class TodosComponent {
     this.todos = this.todos.filter((v, i) => i !== id)
   }
 
+  addTodo (): void {
+    this.todos.push ({
+      content: this.inputTodo,
+      completed:false
+    });
+    this.inputTodo = '';
+  }
+
 }

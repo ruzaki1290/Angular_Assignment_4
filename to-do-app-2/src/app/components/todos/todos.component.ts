@@ -40,13 +40,17 @@ export class TodosComponent {
     ]
   }
 
-  toggleDone (id: number): void {
+  toggleDone (id:number):void {
     this.todos = this.todos.map((v, i) => {
         if (i === id) {
           v.completed = !v.completed;
         }
         return v;
     });
+  }
+
+  deleteTodo (id:number) {
+    this.todos = this.todos.filter((v, i) => i !== id)
   }
 
 }

@@ -33,6 +33,7 @@
 .todo .content {
   flex-grow: 1;
   font-size: 1.6em;
+  cursor: pointer;
 }
 
 .todo .delete {

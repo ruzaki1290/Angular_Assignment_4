@@ -19,11 +19,11 @@ export class TodosComponent {
     this.todos = [
       {
         content: 'First todo',
-        completed: false
+        completed: true
       },
       {
         content: 'Second todo',
-        completed: false
+        completed: true
       },
       {
         content: 'Third todo',

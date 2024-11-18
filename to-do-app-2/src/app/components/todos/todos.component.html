@@ -1,5 +1,15 @@
-<p class="status-message">Your-up-to date tasks manager 😊</p>
+<p class="status-message">Your-up-to date tasks manager 📝✨</p>
 <div class="todos">
+  <form>
+    <input
+        type="text"
+        name="inputTodo"
+        placeholder="Enter your todo here"
+        class="todo-input"
+        [ngModel]="inputTodo"
+    />
+    <input type="submit" value="Add Todo" class="todo-submit">
+  </form>
     <div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completed ? 'done' : '') }}">
         <div class="id">{{ i + 1 }}</div>
         <div class="content" (click)="toggleDone(i)"> {{ todo.content}} </div>

@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Todo } from './../../models/todo'
+import { Todo } from './../../models/todo';
+import {FormsModule} from '@angular/forms'
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.css'
 })
 export class TodosComponent {
 
   todos:Todo[] = [];
+
+  inputTodo:string = "";
 
   constructor() { }
 
